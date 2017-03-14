@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Slabo';
 }
 
 header {
@@ -32,42 +32,37 @@ body {
 h1 {
   text-align: center;
   padding: 100px 0 50 0;
-  font-size: 2em;
+  font-size: 3em;
   color: #020e51;
+  font-weight: 500;
 }
 
 #article-list {
   margin: 0 auto 50px auto;
-  width: 600px;
+  font-size: 16px;
+  width: 800px;
   background: white;
-  padding: 0 20px;
-  padding-bottom: 10px;
+  padding: 0 20px 10px 20px;
   border: 1px solid white;
 }
 
 article {
-  border-bottom: 1px solid grey;
-  margin-bottom: 0;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0 30px 0;
   radius: 2px;
 }
 
 article:last-of-type {
   border-bottom: 0;
+  padding-bottom: 20px;
 }
 
 h3 {
   padding: 20px 0;
-  font-weight: 300;
+  font-weight: 400;
   color: #0c89db;
 }
 
-p {
-  padding-bottom: 30px;
-}
-
-p:last-of-type {
-  padding-bottom: 10;
-}
 
 footer {
   border-top: 1px solid black;
