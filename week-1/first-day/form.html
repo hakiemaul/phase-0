@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Buat Account Baru!</title>
+  </head>
+  <body>
+
+    <h1>Buat Account Baru!</h1>
+
+    <h2>Sign Up Form</h2>
+    <form>
+      <legend>First name:</legend>
+        <input type='text' name='firstname'><br/>
+      <legend>Last name:</legend>
+        <input type='text' name='lastname'><br/>
+    </form><br/>
+    <form>
+      <legend>Gender</legend>
+        <input type='radio' name='gender' value='male'>Male<br/>
+        <input type='radio' name='gender' value='female'>Female<br/>
+        <input type='radio' name='gender' value='other'>Other<br/>
+    </form><br/>
+    <form>
+      <legend>Nationality:</legend>
+        <select name='nationality'>
+          <option label='nationality'>Nationality</option>
+          <option value='indonesian'>Indonesian</option>
+          <option value='singaporean'>Singaporean</option>
+          <option value='malaysian'>Malaysian</option>
+          <option value='australian'>Australian</option>
+        </select>
+    </form><br/>
+    <form>
+      <legend>Language Spoken:</legend>
+        <input type='checkbox' name='lang' value='indo'>Bahasa Indonesia<br/>
+        <input type='checkbox' name='lang' value='eng'>English<br/>
+        <input type='checkbox' name='lang' value='other'>Other<br/>
+    </form><br/>
+    <form>
+      <legend>Bio</legend>
+      <textarea name='bio' rows='10' cols='30'>
+      </textarea>
+    </form>
+
+    <a href='welcome.html'><button name='submit'>Sign Up</button></a>
+  </body>
+</html>
