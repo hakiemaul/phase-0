@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-<<<<<<< HEAD
-  font-family: 'Slabo', sans-serif;
-=======
   font-family: 'Slabo';
->>>>>>> origin/master
 }
 
 header {
@@ -43,30 +39,22 @@ h1 {
 
 #article-list {
   margin: 0 auto 50px auto;
-  font-size: 16px;
+  font-size: 15px;
   width: 800px;
   background: white;
-  padding: 0 20px 10px 20px;
-  border: 1px solid white;
 }
 
 article {
-<<<<<<< HEAD
-  border-bottom: 1px solid grey;
-  margin: 10px 0 20px 0;
-=======
   border-bottom: 1px solid lightgrey;
-  padding: 10px 0 30px 0;
->>>>>>> origin/master
-  radius: 2px;
+  padding: 10px 20px 30px 20px;
 }
 
 article:last-of-type {
-  border-bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 h3 {
+  font-size: 18px;
   padding: 20px 0;
   font-weight: 400;
   color: #0c89db;
