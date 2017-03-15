@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Slabo', sans-serif;
 }
 
 header {
@@ -40,14 +40,13 @@ h1 {
   margin: 0 auto 50px auto;
   width: 600px;
   background: white;
-  padding: 0 20px;
-  padding-bottom: 10px;
+  padding: 0 20px 10px 20px;
   border: 1px solid white;
 }
 
 article {
   border-bottom: 1px solid grey;
-  margin-bottom: 0;
+  margin: 10px 0 20px 0;
   radius: 2px;
 }
 
@@ -61,13 +60,6 @@ h3 {
   color: #0c89db;
 }
 
-p {
-  padding-bottom: 30px;
-}
-
-p:last-of-type {
-  padding-bottom: 10;
-}
 
 footer {
   border-top: 1px solid black;
