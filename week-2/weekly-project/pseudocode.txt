@@ -1,0 +1,50 @@
+BUAT FUNGSI mencocokkan jawaban
+IF 'jawaban' sama dengan 'kunci jawaban'
+SIMPAN 'nilai' bertambah 1
+ENDIF
+AKHIR FUNGSI
+
+BUAT FUNGSI objek menampung informasi pengguna
+SIMPAN 'nama' pengguna
+SIMPAN 'umur' pengguna
+SIMPAN 'pekerjaan' pengguna
+BUAT FUNGSI menyapa pengguna
+TULISKAN sapaan dengan 'nama'
+TULISKAN sapaan sesuai dengan 'umur'
+AKHIR FUNGSI
+AKHIR FUNGSI
+
+SIMPAN 'soal' dalam array
+SIMPAN 'kunci jawaban' dalam array
+SIMPAN 'jawaban' dalam array kosong
+SIMPAN nilai sama dengan 0
+
+TAMPILKAN intro
+INPUT DAN SIMPAN 'nama', 'umur', 'pekerjaan' oleh user
+SIMPAN 'user' dengan nilai FUNGSI objek penampung informasi pengguna
+JALANKAN FUNGSI menyapa pengguna
+
+FOR setiap pertambahan 1 'i' dari 0 hingga panjang 'soal'
+TAMPILKAN 'soal' pada index 'i'
+SIMPAN 'jawaban' pada index 'i'
+UBAH 'jawaban' pada index 'i' menjadi lowercase
+JALANKAN FUNGSI mencocokkan jawaban
+
+SIMPAN 'respon' dalam bentuk string kosong
+SWITCH untuk 'nilai' berbeda
+KASUS 'nilai' adalah 0
+SIMPAN 'respon' sesuai
+KASUS 'nilai' adalah 1
+SIMPAN 'respon' sesuai
+KASUS 'nilai' adalah 2
+SIMPAN 'respon' sesuai
+KASUS 'nilai' adalah 3
+SIMPAN 'respon' sesuai
+KASUS 'nilai' adalah 4
+SIMPAN 'respon' sesuai
+KASUS 'nilai' adalah 5
+SIMPAN 'respon' sesuai
+
+TAMPILKAN hasil kuis dengan jumlah 'nilai' dan 'soal'
+TAMPILKAN 'respon' sesuai kepada 'nama' 'user'
+TAMPILKAN penutup kepada 'nama' 'user'

@@ -1,0 +1,16 @@
+SIMPAN "angka pertama"
+SIMPAN "angka kedua"
+HITUNG "angka pertama" dikali "angka kedua"
+SIMPAN hasil hitungan sebelumnya
+TULISKAN hasil hitungan sebelumnya
+
+SIMPAN "kata"
+IF "kata" sama dengan "Saya Belajar JavaScript!"
+TULISKAN "Pasti Bisa!"
+
+SIMPAN "angka"
+SIMPAN "awal"
+ULANGI "awal" sama dengan 1, hingga "awal" kurang dari sama dengan "angka", dengan "awal" bertambah 1 tiap pengulangan
+IF "awal" modulus 3 sama dengan 0
+TULISKAN "awal"
+
