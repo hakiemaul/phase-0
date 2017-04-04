@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  margin: 25px auto;
+  text-align: center;
+  font-size: 1.5em;
+  color: red;
+}
+
+.container {
+  max-width: 480px;
+  margin: 20px auto;
+  border: .5px solid pink;
+  border-radius: 15px;
+  background-color: pink;
+
+}
+
+fieldset {
+  margin: 10px;
+  border: none;
+  font-size: 1.4em;
+  font-style: helvetica;
+}
+
+input {
+  width: 100%;
+  height: 2em;
+}
+
+
+#btn {
+  background: crimson;
+  margin: 10px auto;
+  font-size: 14px;
+  color: white;
+  padding: 5px;
+  height: auto;
+  width: 150px;
+  border-radius: 40%;
+}
