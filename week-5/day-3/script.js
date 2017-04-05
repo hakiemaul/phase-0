@@ -34,6 +34,8 @@ var regex = /[\d\w]{7,}/g;
 
 mainForm.addEventListener('submit', function(event) {
   event.preventDefault();
+  // var passCorrect = document.getElementById('correction');
+  // passCorrect.parentNode.removeChild(passCorrect);
   if(usernameValue==='') {
     alert('Username tidak boleh kosong');
     return false;
@@ -43,9 +45,10 @@ mainForm.addEventListener('submit', function(event) {
     return false;
   }
   if(!regex.test(passValue)) {
-    alert('Password minimal 8 karakter huruf atau angka');
+    alert('Password harus terdiri dari minimal 8 karakter huruf atau angka')
     return false;
   }
+
   if(passConfValue==='') {
     alert('Password Confirmation tidak boleh kosong');
     return false;
@@ -62,6 +65,7 @@ mainForm.addEventListener('submit', function(event) {
     alert('Password Confirmation tidak sesuai!');
     return false;
   }
+
   if(emailValue!==emailConfValue) {
     alert('Email Confirmation tidak sesuai!');
     return false;
