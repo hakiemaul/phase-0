@@ -1,0 +1,12 @@
+.pp {
+  max-width: 300px;
+}
+
+.headline {
+  text-align: center;
+}
+@media screen and (min-width:996px) {
+  .headline {
+    text-align: right;
+  }
+}
