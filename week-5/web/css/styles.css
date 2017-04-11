@@ -5,6 +5,17 @@
 .headline {
   text-align: center;
 }
+
+.jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+h1 small {
+  color: #fff;
+  font-size: 50%;
+}
 @media screen and (min-width:996px) {
   .headline {
     text-align: right;
