@@ -16,8 +16,24 @@ h1 small {
   color: #fff;
   font-size: 50%;
 }
+
+section {
+  font-size: 16px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.container.page {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
 @media screen and (min-width:996px) {
   .headline {
     text-align: right;
+  }
+  .container.page {
+    width: 70%;
   }
 }
