@@ -4,10 +4,9 @@
 const phi = 3.14;
 const power = 2;
 let radius = 0;
-// var calculateArea = function (radius) {
-//   return phi * Math.pow(radius, power);
-// }
-let calculateArea = radius => {return phi * Math.pow(radius, power)};
+let calculateArea = function (radius) {
+  return phi * Math.pow(radius, power);
+}
 
 radius = 21;
 let area21 = calculateArea(radius);
