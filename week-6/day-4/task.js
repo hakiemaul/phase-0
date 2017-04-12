@@ -46,7 +46,7 @@ class Student {
   }
 }
 
-let aing = new Student("Aing", 23, "290793", "Male", 1231151, ["yeye","yeye"]);
+let aing = new Student("Aing", 23, "290793", "Male", 1231151, ["yeye","melukis","yeye"]);
 
 aing.addHobby("menjahit");
 aing.removeHobby("yeye");
