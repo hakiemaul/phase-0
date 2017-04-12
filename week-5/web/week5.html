@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Test Application</title>
+</head>
+<body>
+  <nav class="nav navbar-default">
+    <div class="container head">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">Aulia Hakiem Noersedya</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container page">
+    <h1><strong>Mouse and Keyboard Testing App</strong><br>
+    <small>By Aulia Hakiem</small></h1>
+    <p>This is a simple application to determine whether your keyboard and mouse is functioning properly.
+     This app was built on HTML using JavaScript and DOM.</p>
+    <p>Instructions:</p>
+    <ul>
+      <li>To test your mouse "click" function, press the blue button.</li>
+      <li>To test your mouse "pointing" function, press the green button.</li>
+      <li>To test your keyboard, type in the text area. If you want to see your typing result,
+      click the submit button.</li>
+    </ul>
+    <div class="row">
+      <section class="col-xs-12 col-md-6">
+        <h1 class="text-center">Test Your Mouse!</h1>
+      </section>
+      <section class="col-xs-12 col-md-6 hidden-xs hidden-sm">
+        <h1 class="text-center">Test Your Keyboard!</h1>
+      </section>
+    </div>
+    <div class="row">
+      <section class="col-xs-12 col-md-3">
+        <h2 class="text-center">0</h2>
+        <p class="pager" style="line-height: 70px;">
+          <button id="click" class="btn btn-primary btn-lg"><p>Click Me!</p></button>
+        </p>
+      </section>
+      <section class="col-xs-12 col-md-3">
+        <h2 class="text-center">0</h2>
+        <p class="pager" style="line-height: 70px;">
+          <button id="hover" class="btn btn-success btn-lg"><p>Hover Me!</p></button>
+        </p>
+      </section>
+      <section class="col-xs-12 col-md-6 hidden-lg hidden-md">
+        <h1 class="text-center">Test Your Keyboard!</h1>
+      </section>
+      <section class="col-xs-12 col-md-6">
+        <h3 class="text-center">Try to type with your keyboard below:</h3>
+        <form action='#' id='main-form'>
+          <p class="pager">
+          <textarea id="test" form="main-form"></textarea>
+          <br>
+          <input class="btn btn-primary"type="submit" value="Submit">
+        </p>
+        </form>
+        <h4 id="result" class="text-center">Your result should be shown below after you submit:</h4>
+      </section>
+    </div>
+    <p class="closing">How are the results? Good? Or do you need to replace your peripherals?
+  Thanks for using my app, and as this is my first ever web application, I am open to any suggestions and critics,
+  reach me on my email!</p>
+  </section>
+  <footer>
+      <div class='social'>
+        <a href='https://www.linkedin.com/in/aulia-hakiem-89750086/'>
+          <img src='images/linkedin.svg'/></a>
+        <a href='https://www.facebook.com/aulia.hakiem.n'>
+          <img src='images/facebook.svg'/></a>
+        <a href='https://www.twitter.com/hakiemaul'>
+          <img src='images/twitter.svg'/></a>
+      </div>
+      <h5>copyright &copy; 2017 by hakiemaul</h5>
+</footer>
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
