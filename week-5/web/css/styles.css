@@ -1,7 +1,9 @@
 .pp {
   max-width: 300px;
 }
-
+.navbar-default .navbar-nav > li > a {
+  color: #333;
+}
 .headline {
   text-align: center;
 }
@@ -13,8 +15,8 @@
 }
 
 h1 small {
-  color: #fff;
-  font-size: 50%;
+  color: #777;
+  font-size: 40%;
 }
 
 section {
@@ -25,15 +27,30 @@ h2 {
   font-weight: bold;
 }
 
-.container.page {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+.closing {
+  padding: 10px 0;
+}
+footer {
+  background-color: #e7e7e7;
+  font-family: serif;
+  text-align: center;
+}
+.social {
+  padding-top: 10px;
+}
+.social img {
+  height: 20px;
 }
 @media screen and (min-width:996px) {
   .headline {
     text-align: right;
   }
   .container.page {
+    width: 70%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  .container.head {
     width: 70%;
   }
 }
