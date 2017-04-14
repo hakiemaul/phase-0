@@ -42,12 +42,19 @@ class Student {
   }
 
   getData() {
-    return "Nama: " + this.name + ", Age: " + this.age + ", Date of Birth: " + this.dateofbirth + ", Gender: " + this.gender + ", Student ID: " + this.id + ", Hobbies: " + this.hobbies;
+    console.log("Nama: " + this.name);
+    console.log("Age: " + this.age);
+    console.log("Date of Birth: " + this.dateofbirth);
+    console.log("Gender: " + this.gender);
+    console.log("Student ID: " + this.id);
+    console.log("Hobbies: " + this.hobbies);
   }
 }
 
-let aing = new Student("Aing", 23, "290793", "Male", 1231151, ["yeye","melukis","yeye"]);
+let aing = new Student("Aulia", 23, "290793", "Female", 1231151, ["yeye","melukis","yeye"]);
 
 aing.addHobby("menjahit");
 aing.removeHobby("yeye");
-console.log(aing.getData());
+aing.setGender("Male");
+aing.setAge(24);
+aing.getData();
