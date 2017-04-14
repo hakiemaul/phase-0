@@ -53,8 +53,10 @@ class Student {
 
 let aing = new Student("Aulia", 23, "290793", "Female", 1231151, ["yeye","melukis","yeye"]);
 
+aing.setName("Aulia Hakiem Noersedya");
+aing.setAge(24);
+aing.setDateOfBirth("29 Juli 1993");
+aing.setGender("Male");
 aing.addHobby("menjahit");
 aing.removeHobby("yeye");
-aing.setGender("Male");
-aing.setAge(24);
 aing.getData();
