@@ -1,12 +1,16 @@
 // Recursive Competency Test
 
 function tambahTerus(num) {
-  var digit=num.toString().split('').length;
-  var maks=Math.pow(10,digit-1);
-  if(num<10) {
-    return num;
-  } else {
-    return Math.floor(num/maks) + tambahTerus(num-(maks*Math.floor(num/maks)));
+  var jumlah=0;
+  var x=num.toString().split('');
+  for(var i=0;i<x.length;i++) {
+    jumlah+=parseInt(x[i]);
+  }
+  if(jumlah.toString().length == 1) {
+    return jumlah;
+  }
+  else {
+    return tambahTerus(jumlah);
   }
 }
 
