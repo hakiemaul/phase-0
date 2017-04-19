@@ -41,8 +41,70 @@ British National Crisis
 */
 
 function nextTargetArea(code) {
-  // Code Hanya Disini!
-
+  var arr=code.split('');
+  var jumlah=0;
+  for(var i=0;i<arr.length;i++) {
+    if(arr[i]=='T') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='W') {
+          jumlah+=2;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+        }
+      }
+    }
+    if(arr[i]=='T') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='R') {
+          for(var k=0;k<arr.length;k++) {
+            if(arr[k]=='H') {
+              jumlah+=3;
+              arr.splice(k,1,'x');
+              arr.splice(j,1,'x');
+              arr.splice(i,1,'x');
+            }
+          }
+        }
+      }
+    }
+    if(arr[i]=='F') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='O') {
+          jumlah+=4;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+        }
+      }
+    }
+    if(arr[i]=='S') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='X') {
+          jumlah+=6;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+        }
+      }
+    }
+    if(arr[i]=='S') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='V') {
+          jumlah+=7;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+        }
+      }
+    }
+    if(arr[i]=='E') {
+      for(var j=0;j<arr.length;j++) {
+        if(arr[j]=='G') {
+          jumlah+=8;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+        }
+      }
+    }
+  }
+  return "District " + jumlah + " is the next target!";
 }
 
 console.log(nextTargetArea('WTO')); // "District 2 is the next target!"
