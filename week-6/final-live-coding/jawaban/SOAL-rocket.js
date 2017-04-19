@@ -62,46 +62,27 @@ function nextTargetArea(code) {
               arr.splice(k,1,'x');
               arr.splice(j,1,'x');
               arr.splice(i,1,'x');
+              break;
             }
           }
         }
       }
     }
     if(arr[i]=='F') {
-      for(var j=0;j<arr.length;j++) {
-        if(arr[j]=='O') {
-          jumlah+=4;
-          arr.splice(j,1,'x');
-          arr.splice(i,1,'x');
-        }
-      }
+      jumlah+=4;
+      arr.splice(i,1,'x');
     }
-    if(arr[i]=='S') {
-      for(var j=0;j<arr.length;j++) {
-        if(arr[j]=='X') {
-          jumlah+=6;
-          arr.splice(j,1,'x');
-          arr.splice(i,1,'x');
-        }
-      }
+    if(arr[i]=='X') {
+      jumlah+=6;
+      arr.splice(i,1,'x');
     }
-    if(arr[i]=='S') {
-      for(var j=0;j<arr.length;j++) {
-        if(arr[j]=='V') {
-          jumlah+=7;
-          arr.splice(j,1,'x');
-          arr.splice(i,1,'x');
-        }
-      }
+    if(arr[i]=='V') {
+      jumlah+=7;
+      arr.splice(i,1,'x');
     }
-    if(arr[i]=='E') {
-      for(var j=0;j<arr.length;j++) {
-        if(arr[j]=='G') {
-          jumlah+=8;
-          arr.splice(j,1,'x');
-          arr.splice(i,1,'x');
-        }
-      }
+    if(arr[i]=='G') {
+      jumlah+=8;
+      arr.splice(i,1,'x');
     }
   }
   return "District " + jumlah + " is the next target!";
@@ -112,3 +93,4 @@ console.log(nextTargetArea('WTWTHROETEO')); // "District 7 is the next target!"
 console.log(nextTargetArea('HSEVTEEING')); // "District 15 is the next target!"
 console.log(nextTargetArea('FNEXSIVUSEOR')); // "District 17 is the next target!"
 console.log(nextTargetArea('EFNEXRSIVHUSEORTE')); // "District 20 is the next target!"
+console.log(nextTargetArea('TWOTWOTHREEFOURSEVENEIGHT')); // "District 20 is the next target!"
