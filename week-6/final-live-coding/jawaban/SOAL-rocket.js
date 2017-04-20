@@ -52,6 +52,12 @@ function nextTargetArea(code) {
           arr.splice(i,1,'x');
           break;
         }
+        if(arr[j]=='G') {
+          jumlah+=8;
+          arr.splice(j,1,'x');
+          arr.splice(i,1,'x');
+          break;
+        }
       }
     }
     if(arr[i]=='F') {
@@ -65,16 +71,6 @@ function nextTargetArea(code) {
     if(arr[i]=='V') {
       jumlah+=7;
       arr.splice(i,1,'x');
-    }
-    if(arr[i]=='G') {
-      for(var j=0;j<arr.length;j++) {
-        if(arr[j]=='T') {
-          jumlah+=8;
-          arr.splice(j,1,'x');
-          arr.splice(i,1,'x');
-          break;
-        }
-      }
     }
   }
   for(i=0;i<arr.length;i++) {
