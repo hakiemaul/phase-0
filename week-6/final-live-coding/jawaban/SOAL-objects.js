@@ -4,6 +4,9 @@ function Fox(speciesParam, favouriteFoodParam) {
   this.species=speciesParam;
   this.favouriteFood=favouriteFoodParam;
   this.howl=function() {
+    if(this.species[0]=='A'||this.species[0]=='I'||this.species[0]=='U'||this.species[0]=='E'||this.species[0]=='O') {
+      return "howl! I'm an " + this.species + " Fox !!!"
+    }
     return "howl! I'm a " + this.species + " Fox !!!"
   }
   this.meet=function(species) {
