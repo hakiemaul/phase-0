@@ -15,6 +15,19 @@
 function BinaryReversal(str) {
   //konversi desimal ke biner
   var bin=Number(str).toString(2);
+  var faktor2=0;
+  console.log(bin)
+  //mencari kuadrat dari dua yang terdekat dari panjang string bin (mencari yang lebih besar)
+  for(var i=3;i<7;i++) {
+    if(Math.pow(2,i)>=bin.length) {
+      faktor2=Math.pow(2,i);
+      break;
+    }
+  }
+  //menambahkan angka nol didepan bin hingga panjang bin menjadi sepanjang bilangan kuadrat dari dua tersebut
+  while(bin.length<faktor2) {
+    bin='0'+bin;
+  }
   var binBalik=[];
   //pembalikan elemen dalam biner
   for(var i=0;i<bin.length;i++) {
@@ -27,4 +40,4 @@ function BinaryReversal(str) {
 }
 
 // keep this function call here
-BinaryReversal(readline());
+console.log(BinaryReversal("15487793"));
